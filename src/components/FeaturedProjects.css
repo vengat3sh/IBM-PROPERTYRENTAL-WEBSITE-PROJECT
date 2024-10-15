@@ -1,0 +1,154 @@
+.featured-projects {
+  padding: 40px;
+  background:lightsteelblue; /* Modern gradient background */
+}
+
+.featured-projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color:rgba(0, 0, 0, 0.75);
+}
+
+/* Grid Styling */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Gradient Card Styling */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  background: linear-gradient(135deg, #8e44ad, #3498db); /* Gradient background */
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 400px; /* Fixed card height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure spacing between elements */
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Enlarge on hover */
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Project Image */
+.project-image-container {
+  width: 100%;
+  height: 300px; /* Increased height for larger images */
+  overflow: hidden;
+  border-bottom: 5px solid #fff;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1); /* Zoom-in on hover */
+}
+
+/* Info Section */
+.project-info {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.75); /* Dark background for text */
+  color: #fff;
+  text-align: center;
+  flex-grow: 1; /* Ensure the info section grows to fill available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Project Title Styling */
+.project-title {
+  font-size: 1.8rem; /* Increased font size */
+  margin-bottom: 0.5rem;
+  color: #ffd700; /* Gold color for title */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project-title:hover {
+  color: #ffffff; /* Change color on hover */
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Project Description */
+.project-description {
+  font-size: 1rem;
+  color: #ddd;
+  margin: 0.5rem 0 1rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Increased to 4 lines to display more content */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Project Price */
+.project-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffd700; /* Gold accent for price */
+  margin-top: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .project-image-container {
+    height: 240px; /* Adjusted height for smaller screens */
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    -webkit-line-clamp: 2; /* Limit to 2 lines on smaller screens */
+  }
+
+  .project-price {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image-container {
+    height: 180px; /* Further adjusted height for mobile */
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-description {
+    font-size: 0.8rem;
+    -webkit-line-clamp: 2; /* Limit to 2 lines on smaller screens */
+  }
+
+  .project-price {
+    font-size: 1rem;
+  }
+}

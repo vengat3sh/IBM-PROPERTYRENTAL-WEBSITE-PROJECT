@@ -1,0 +1,67 @@
+/* Home.css */
+
+.home {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  background: url('../assets/urban-loft.jpg') no-repeat center center; /* Background image */
+  background-size: cover; /* Cover entire area */
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.home-background {
+  background-image: url("../assets/urban-loft.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 150px ; /* Background overlay for better text visibility */
+}
+
+.note-card {
+  position: relative;
+  background: rgba(0, 0, 0, 0.8); /* Transparent black background */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 650px;
+
+  z-index: 2; /* On top of the background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content in the card */
+  justify-content: center;
+}
+
+.note-card h1 {
+  font-size: 2rem; /* Larger heading */
+  color: white; /* White text */
+}
+
+.note-card p {
+  font-size: 1.2rem; /* Larger paragraph text */
+  margin-bottom: 20px;
+  color: #ddd; /* Light gray for contrast */
+}
+
+.explore-btn {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: #00b894; /* Teal background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #009e68; /* Darker teal on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}

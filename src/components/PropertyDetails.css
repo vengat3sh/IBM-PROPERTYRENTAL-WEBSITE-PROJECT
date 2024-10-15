@@ -1,0 +1,131 @@
+.property-details-container {
+  padding: 40px; /* Increased padding for more space inside */
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Increased max-width for a larger container */
+  margin: 40px auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.property-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333; /* Dark color for the title */
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.image-item {
+  flex: 1 1 calc(33.33% - 15px);
+  position: relative;
+}
+
+.image-item-card {
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #f0f4f8, #e0e7ec); /* Light gradient for the cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-item-card:hover {
+  transform: scale(1.05);
+}
+
+.property-image-gallery {
+  width: 100%;
+  height: 200px; /* Set a fixed height for uniformity */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333; /* Dark color for the caption */
+  margin-top: 10px;
+}
+
+.property-description {
+  font-size: 1.25rem;
+  margin: 15px 0;
+  color: #555;
+}
+
+.property-price {
+  font-size: 1.75rem;
+  color: #2ecc71;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.btn {
+  padding: 6px 12px; /* Reduced size for better touch targets */
+  border: none;
+  border-radius: 4px; /* Reduced border radius */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.85rem; /* Reduced font size */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.buy-btn {
+  background: linear-gradient(90deg, #00b894, #00cec9); /* Gradient from green to teal */
+}
+
+.buy-btn:hover {
+  background: linear-gradient(90deg, #009e68, #00b2b0); /* Darker gradient on hover */
+  transform: translateY(-1px); /* Reduced hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cart-btn {
+  background: linear-gradient(90deg, #c0392b, #e74c3c); /* Dark gradient for the cart button */
+}
+
+.cart-btn:hover {
+  background: linear-gradient(90deg, #a8322f, #c0392b); /* Darker gradient on hover */
+  transform: translateY(-1px); /* Reduced hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 45px;  
+  text-decoration: none;
+  color: cadetblue;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.image-gallery-card {
+  padding: 20px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Light gradient color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0; /* Margin for spacing */
+}

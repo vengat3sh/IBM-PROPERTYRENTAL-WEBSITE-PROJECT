@@ -1,0 +1,30 @@
+/* Footer.css */
+
+.footer {
+    background-color: #34495e; /* Darker background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .socials {
+    margin-top: 10px;
+  }
+  
+  .socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .socials a:hover {
+    color: #00b894; /* Highlight color */
+  }
+  
